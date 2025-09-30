@@ -60,10 +60,17 @@
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          More Research
+          More Research for Turkish Image Captioning
         </a>
         <div class="navbar-dropdown">
           <!-- Add more links as needed -->
+            <a class="navbar-item" href="https://github.com/serdaryildiz/TRCaptionNet">
+                TRCaptionNet
+            </a>
+            <a class="navbar-item" href="https://github.com/serdaryildiz/TurkishCaptionSet-COCO">
+                TurkishCaptionSet-COCO
+            </a>
+
         </div>
       </div>
     </div>
@@ -97,7 +104,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org"
+                <a href="https://journals.tubitak.gov.tr/elektrik/vol33/iss5/10/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -135,23 +142,6 @@
 </section>
 
 
-<!--<section class="hero is-light is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      &lt;!&ndash; Single Image Replacement &ndash;&gt;-->
-<!--      <img src="./static/images/samples_ENTIRe-ID.png" alt="Descriptive Alt Text" style="width:100%; height:auto;">-->
-<!--      -->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-
-
-
-
-
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -159,7 +149,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          abstract
+          This paper introduces a novel and high-performance encoder-decoder-based deep model called TRCaption Net++ for generic Turkish image captioning tasks. The proposed model is an improved and refined version of TRCap tionNet, which essentially employs a CLIP (contrastive language–image pretraining) image encoder, a feature projection layer and a BERT (bidirectional encoder representations from transformers) text decoder. Within the scope of the study, the regular TRCaptionNet model was trained and specifically fine-tuned with a massive set of image data. In this respect, approximately 2,000,000 random images representing the words in the MS COCO and Flickr caption sets were retrieved through web crawling in the initial stage. Then, nearly 8,000,000 caption texts were generated for each image via 4 different image captioning models. Finally, the text decoder module of the proposed model was improved by using the image-caption features of these crawled images. The performance evaluation test of the TRCaptionNet++ model was carried out on two Turkish caption datasets (TasvirEt and Turkish MS COCO) and two machine-translated caption sets (MS COCO and Flickr30K) by measuring common image captioning metrics such as BLEU, METEOR, ROUGE-L, CIDEr and SPICE. As a result of the performance tests, quite remarkable captioning success rates were achieved and it is observed that the proposed model has a superior performance outperforming all the related works.
           </p>
         </div>
       </div>
@@ -170,93 +160,124 @@
 </section>
 
 
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@INPROCEEDINGS{,
-  author={},
-  booktitle={},
-  title={},
-  year={},
-  doi={}}</code></pre>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-3">Dataset Creation</h1>
+      <img src="./figures/dataset_creation.png" alt="Descriptive Alt Text" style="width:80%; height:auto;">
+    </div>
   </div>
 </section>
 
 
 
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-3 has-text-centered">Model Architecture</h1>
 
-<!--<section class="hero is-light is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
+      <div class="columns is-vcentered">
+        <!-- Left: image -->
+        <div class="column has-text-centered">
+          <img src="./figures/trcaptionnetpp.png" alt="Descriptive Alt Text" style="width:100%; height:auto;">
+        </div>
 
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/0.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/1.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/2.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/3.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/4.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/5.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/6.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/7.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/8.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/9.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/10.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/11.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/12.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/13.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/14.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/15.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/16.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/17.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/18.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
-<!--        <div class="item item-steve">-->
-<!--          <img src="./static/images/samples/19.png" alt="Description for Steve Image" style="width:100%; height:auto;">-->
-<!--        </div>-->
+        <!-- Right: Python code -->
+        <div class="column">
+          <pre><code id="model-code" class="language-python">
+class TRCaptionNetpp(nn.Module):
+    """
+    TRCaptionNet++ (pseudo):
+    - Vision encoder: DINOv2
+    - Language decoder: BERT (decoder mode with cross-attention)
+    - Projection: tiny Transformer (Proj)
+    """
+    def __init__(self, config: dict):
+        super().__init__()
+        ...
 
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
+
+    @torch.no_grad()
+    def generate(
+        self,
+        images,
+        max_length: int = None,
+        min_length: int = 12,
+        num_beams: int = 3,
+        repetition_penalty: float = 1.1
+    ):
+        image_embeds = self.vision_encoder(images.half()).float()
+        if self.proj is not None:
+            image_embeds = self.proj(image_embeds)
+
+        image_atts = torch.ones(image_embeds.shape[:-1],
+                                dtype=torch.long,
+                                device=images.device)
+        model_kwargs = {
+            "encoder_hidden_states": image_embeds,
+            "encoder_attention_mask": image_atts
+        }
+
+        input_ids = torch.full(
+            (image_embeds.shape[0], 1),
+            fill_value=2,
+            device=images.device,
+            dtype=torch.long
+        )
+
+        outputs = self.language_decoder.generate(
+            input_ids=input_ids,
+            max_length=self.max_length if max_length is None else max_length,
+            min_length=min_length,
+            num_beams=num_beams,
+            eos_token_id=self.tokenizer.sep_token_id,
+            pad_token_id=self.tokenizer.pad_token_id,
+            repetition_penalty=repetition_penalty,
+            **model_kwargs,
+        )
+
+        captions = [self.tokenizer.decode(out,skip_special_tokens=True)
+                    for out in outputs]
+        return captions
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Highlight.js Darcula (PyCharm-like) -->
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/base16/dracula.min.css">
+<script defer src="https://unpkg.com/@highlightjs/cdn-assets@11.4.0/highlight.min.js"></script>
+<script defer src="https://unpkg.com/@highlightjs/cdn-assets@11.4.0/languages/python.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const el = document.getElementById("model-code");
+    if (el) hljs.highlightElement(el);  // ⬅️ highlight only this one
+  });
+</script>
+
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{yildiz2025trcaptionnetpp,
+  author    = {Serdar Yildiz and Abbas Memis and Songül Varli},
+  title     = {TRCaptionNet++: A high-performance encoder-decoder based deep Turkish image captioning model fine-tuned with a large-scale set of pretrain data},
+  journal   = {Turkish Journal of Electrical Engineering and Computer Sciences},
+  volume    = {33},
+  number    = {5},
+  year      = {2025},
+  pages     = {669--687},
+  doi       = {10.55730/1300-0632.4150},
+  url       = {https://doi.org/10.55730/1300-0632.4150},
+}</code></pre>
+  </div>
+</section>
 
 
 
